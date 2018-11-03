@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import Clock from "./clock";
+import Tabs from './tabs';
+import Weather from './weather';
 import logo from './logo.svg';
 import './App.css';
+
+const tabValues = [{"Title":"Lolk", "Content":"Nope not doing it"}, {"Title":"Meh", "Content": "Next is this content"}, {"Title":"Wow", "Content": "Keep making content"}];
 
 class App extends Component {
   render() {
@@ -11,14 +16,11 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Clock />
+          <Tabs 
+            tabValues={tabValues}
+          />
+          <Weather />
         </header>
       </div>
     );

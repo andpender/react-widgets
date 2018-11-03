@@ -30,3 +30,40 @@
     transform: rotate(360deg);
   }
 }
+
+.clock {
+  color: red;
+  font-family: arial;
+}
+
+.active {
+  border-width: 2px 2px 0px 2px;;
+  color: green;
+   font-weight: bold;
+}
+
+.tab-headers {
+  list-style-type: none;
+}
+
+li {
+  color: red;
+  border: 2px solid red;
+  border-radius: 1px;
+  padding: 20px;
+}
+
+li:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+}
+
+.weatherApp {
+  border: 2px solid white;
+  margin: 10px 0 10px 0;
+  padding: 0px 10px 0px 10px;
+}
