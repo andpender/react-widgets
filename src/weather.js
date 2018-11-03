@@ -45,11 +45,12 @@ class Weather extends Component {
 		const { weather } = this.state;
 		return (
 			<div className="weatherApp">
-				{weather &&
-					[
-						<p>City: {weather.name}</p>,
+				{weather ?
+					<>
+						<p>City: {weather.name}</p>
 						<p>Temperature: {weather.main.temp}&deg;C</p>
-					]
+					</>
+					: <p>Loading Weather....</p>
 				}
 			</div>
 		);

@@ -36,29 +36,29 @@
   font-family: arial;
 }
 
-.active {
-  border-width: 2px 2px 0px 2px;;
-  color: green;
-   font-weight: bold;
+li.active {
+  border-width: 2px 2px 0px 2px !important;
+  color: green !important;
+  font-weight: bold;
 }
 
 .tab-headers {
   list-style-type: none;
 }
 
-li {
+ul.tab-headers > li {
   color: red;
   border: 2px solid red;
   border-radius: 1px;
   padding: 20px;
 }
 
-li:hover {
+ul.tab-headers > li:hover {
   background-color: darkgray;
   cursor: pointer;
 }
 
-ul {
+ul.tab-headers {
   display: flex;
 }
 
